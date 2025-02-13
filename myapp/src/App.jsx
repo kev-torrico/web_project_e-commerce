@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import Loginform from "./components/Loginform";
 import Privacy from "./components/Privacy";
 import Signup from "./components/Signup";
+import "./App.css";
 
 const App = () => {
   return (
