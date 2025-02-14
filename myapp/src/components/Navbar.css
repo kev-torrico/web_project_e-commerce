@@ -32,7 +32,7 @@
   cursor: pointer;
 }
 .menu_icon {
-  /* display: none !important; */
+  display: none !important;
 }
 .bad_search {
   display: flex;

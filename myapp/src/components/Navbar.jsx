@@ -22,15 +22,15 @@ const Navbar = () => {
   return (
     <div>
       <div className="navbar_div">
-        <div>
+        <div className={data ? "input_form" : "input_form_not"}>
           <input type="text" placeholder="Search here" />
           <SearchIcon className="Search_icon_input" />
           <CloseIcon onClick={inputHandler} className="close_icon" />
         </div>
-        <div>
+        <div className={data ? "header" : ""}>
           <div className="navbar_main">
-            <div onClick={inputHandler}>
-              <div>
+            <div>
+              <div onClick={inputHandler}>
                 <SearchIcon className="Search_icon" />
               </div>
               <MenuIcon onClick={menuHandler} className="menu_icon" />
@@ -64,7 +64,7 @@ const Navbar = () => {
               Signupform
             </Link>
           </div>
-          <div>
+          <div className={menu ? "sidebar2" : "sidebar1"}>
             <Link to="/" className="sidebar_link">
               Home
             </Link>
